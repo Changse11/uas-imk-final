@@ -1,0 +1,289 @@
+:root {
+  --primary: #68b6ff;
+  --background: #ffffff;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Ubuntu", "Song-Myung", sans-serif;
+  background-color: var(--background);
+  color: #000000;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7%;
+  background-color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  height: 80px;
+}
+
+/* Logo */
+.navbar .navbar-logo img {
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Navbar menu */
+
+.navbar-nav {
+  display: flex;
+  gap: 2rem; /* Memberi jarak antar link */
+}
+
+.navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  font-family: "song myung", sans-serif;
+  transition: color 0.3s ease;
+}
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--background);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar-nav a:hover {
+  color: #000;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #000;
+}
+
+#Menu {
+  display: none;
+}
+/* NAVBAR END */
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 90%;
+  }
+}
+/* Kelas Section */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.kelas {
+  padding: 40px 20px 80px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.kelas h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.kelas h1 span {
+  color: #68b6ff;
+}
+
+.lihat-semua {
+  display: block;
+  text-align: right;
+  margin: 20px 10px 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  color: #00bfff;
+}
+.lihat-semua:hover {
+  color: black; /* Warna saat hover */
+}
+
+.kelas-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card Style */
+.kelas-card {
+  width: 300px;
+  background-color: #90caf9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.kelas-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  position: relative;
+  background-color: #68b6ff;
+  padding: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Card Body */
+.card-content {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card-content h2 {
+  font-size: 22px;
+  margin: 8px 0;
+  color: #000;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.desc {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.harga {
+  font-size: 16px;
+  color: #000;
+}
+
+.harga strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.harga span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kelas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kelas-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .kelas h1 {
+    font-size: 28px;
+  }
+
+  .lihat-semua {
+    margin-bottom: 20px;
+  }
+}
+/* Kelas Section End */
+/* Tablet */
+@media (max-width: 768px) {
+  #Menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #68b6ff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #68b6ff;
+    width: 30rem;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    font-size: 5rem;
+  }
+}
+/* mobile */
+@media (max-width: 450px) {
+  #Menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #68b6ff;
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #68b6ff;
+    width: 30rem;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: right 0.3s ease;
+    font-size: 5rem;
+  }
+}

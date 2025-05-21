@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAcademy</title>
+
+    <!--Font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="-* 1   https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Song Myung -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Song+Myung&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!--My style css-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#Home" class="navbar-logo">
+        <img src="img/logo.png" alt="CAcademy Logo" />
+      </a>
+
+      <div class="navbar-nav">
+        <a href="#Home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#kelebihan">Keunggulan</a>
+        <a href="#kelas">Kelas</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="Menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section id="Home" class="hero">
+      <div class="hero-section">
+        <div class="hero-description">
+          <h1 class="hero-title">
+            Kuasai Masa Depanmu Bersama
+            <span class="about-highlight">CAcademy</span>
+          </h1>
+          <a href="#kontak"
+            ><button class="button-hero">Gabung Sekarang</button></a
+          >
+        </div>
+        <div class="hero-image">
+          <img src="img/Programmer.png" alt="hero image" />
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section  -->
+    <section id="about" class="About">
+      <div class="About-section">
+        <div class="about-image">
+          <img src="img/Selfie.png" alt="about image" />
+        </div>
+        <div class="about-description">
+          <h1 class="about-title">
+            Tentang <span class="about-highlight">Kami</span>
+          </h1>
+          <p>
+            CAcademy adalah platform bimbingan belajar online dan offline yang
+            berfokus pada pengajaran Teknologi Informasi (IT) dengan metode
+            pembelajaran yang interaktif, praktis, dan berbasis industri. Kami
+            menyediakan berbagai kelas IT, mulai dari desain UI/UX, web
+            development, data analysis, keamanan siber, hingga manajemen sistem
+            IT, yang diajarkan oleh instruktur terbaik di bidangnya.
+          </p>
+          <p>
+            Kami percaya bahwa setiap orang berhak mendapatkan akses
+            pembelajaran IT berkualitas tanpa harus mengeluarkan biaya yang
+            mahal. Oleh karena itu, CAcademy hadir dengan biaya terjangkau,
+            tanpa mengurangi kualitas materi dan pengajaran.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end  -->
+
+    <!-- Kelebihan section -->
+    <section id="kelebihan" class="kelebihan">
+      <div class="kelebihan-container">
+        <h1 class="kelebihan-title">
+          Kenapa Harus Memilih <span>CAcademy</span>?
+        </h1>
+        <div class="kelebihan-grid">
+          <div class="kelebihan-item">
+            <img src="img/online.png" alt="Kelas Online & Offline" />
+            <h3>Kelas Online & Offline</h3>
+            <p>Belajar di mana saja dengan fleksibilitas tinggi</p>
+          </div>
+          <div class="kelebihan-item">
+            <img src="img/kurikulum.png" alt="Instruktur Berpengalaman" />
+            <h3>Instruktur Berpengalaman</h3>
+            <p>Dibimbing oleh para praktisi IT profesional</p>
+          </div>
+          <div class="kelebihan-item">
+            <img src="img/kurikulum.png" alt="Kurikulum Berbasis Industri" />
+            <h3>Kurikulum Berbasis Industri</h3>
+            <p>Kurikulum ter-update dan relevan dengan kebutuhan industri</p>
+          </div>
+          <div class="kelebihan-item">
+            <img src="img/Project.png" alt="Belajar dengan Proyek Nyata" />
+            <h3>Belajar dengan Proyek Nyata</h3>
+            <p>
+              Belajar sambil membangun portofolio untuk kariermu di dunia IT!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kelebihan section end -->
+
+    <!-- Kelas section -->
+    <section id="kelas" class="kelas">
+      <h1>Kelas Yang <span>Tersedia</span></h1>
+      <a href="Kelas.html" class="lihat-semua">Lihat Semua</a>
+
+      <div class="kelas-container">
+        <!-- Card 1 -->
+        <div class="kelas-card">
+          <div class="card-image">
+            <img src="img/Cakra.jpg" alt="Front-end" />
+          </div>
+          <div class="card-content">
+            <h3>Apa itu Front-End?</h3>
+            <p class="desc">
+              "Belajar HTML, CSS, dan JavaScript dari nol hingga siap membangun
+              web!"
+            </p>
+            <p class="harga">
+              Rp <strong>700.000</strong> <span>/ Siswa</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="kelas-card">
+          <div class="card-image">
+            <img src="img/windah.jpg" alt="Data Analyst" />
+          </div>
+          <div class="card-content">
+            <h3>Apa itu Data Analyst?</h3>
+            <p class="desc">
+              "Kuasai Excel, SQL, dan Python untuk menggali insight dari data!"
+            </p>
+            <p class="harga">
+              Rp <strong>700.000</strong> <span>/ Siswa</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="kelas-card">
+          <div class="card-image">
+            <img src="img/nadin.jpg" alt="Android Developer" />
+          </div>
+          <div class="card-content">
+            <h3>Apa itu Android Developer?</h3>
+            <p class="desc">
+              "Kuasai Flutter atau React Native untuk membuat aplikasi keren!"
+            </p>
+            <p class="harga">
+              Rp <strong>900.000</strong> <span>/ Siswa</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kelas section end -->
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="testimoni">
+      <h1>Kata Mereka Tentang <span>CAcademy</span></h1>
+      <a href="Testimoni.html" class="lihat-semua">Lihat Semua</a>
+
+      <div class="testimoni-container">
+        <div class="testimoni-card">
+          <h3>Dari Bintang</h3>
+          <p>
+            "Belajar front-end di CAcademy benar-benar membuka wawasan saya!
+            Materinya lengkap, mulai dari HTML, CSS, hingga React. Saya juga
+            bisa langsung praktek dengan proyek-proyek seru. Sekarang, saya
+            lebih percaya diri membangun website sendiri. Terima kasih”
+          </p>
+        </div>
+        <div class="testimoni-card">
+          <h3>Dari Denisha</h3>
+          <p>
+            "Saya sangat terbantu dengan kursus data analyst di CAcademy!
+            Belajar Python, SQL, dan visualisasi data jadi lebih mudah karena
+            ada studi kasus nyata. Sekarang, saya sudah bisa menganalisis data
+            dengan lebih percaya diri. Benar-benar sumber belajar gratis yang
+            luar biasa!"
+          </p>
+        </div>
+        <div class="testimoni-card">
+          <h3>Dari Daud</h3>
+          <p>
+            "Dulu saya bingung memahami konsep back-end, tapi CAcademy
+            menjelaskan dengan sangat mudah dipahami. Dari dasar-dasar Node.js,
+            Express, hingga database seperti MongoDB dan MySQL, semuanya dikemas
+            dengan jelas dan praktis. Cocok banget buat pemula seperti saya!"
+          </p>
+        </div>
+        <div class="testimoni-card">
+          <h3>Dari Nafhan</h3>
+          <p>
+            "Dulu saya bingung memahami konsep back-end, tapi CAcademy
+            menjelaskan dengan sangat mudah dipahami. Dari dasar-dasar Node.js,
+            Express, hingga database seperti MongoDB dan MySQL, semuanya dikemas
+            dengan jelas dan praktis. Cocok banget buat pemula seperti saya!"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni Section end-->
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+      <h1 class="kontak-title">Ada Pertanyaan? <span>Kontak kita!</span></h1>
+
+      <div class="kontak-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.93200854641!2d106.97337695000002!3d-6.284539499999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c6900964f69%3A0xd00495351896398!2sBekasi%2C%20Kota%20Bks%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1747563840662!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form class="kontak-form">
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="9" required></textarea>
+          <button type="submit">Submit <span>➤</span></button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Kontak Section End -->
+
+    <!-- Footter section -->
+    <section id="footer" class="footer">
+      <div class="socialmedia">
+        <a href="https://www.instagram.com/cakramukti_/" target="_blank">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/@Cakramukti" target="_blank">
+          <i data-feather="youtube"></i>
+        </a>
+        <a href="mailto:Cakramukti50@gmail.com" target="_blank">
+          <i data-feather="mail"></i>
+        </a>
+      </div>
+
+      <div class="links">
+        <a href="#Home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#kelebihan">Keunggulan</a>
+        <a href="#kelas">Kelas</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>
+          © Copyright 2023, All Rights Reserved by <strong>CAcademy</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Footter section End -->
+
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
